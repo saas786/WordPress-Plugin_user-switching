@@ -1,12 +1,12 @@
 === User Switching ===
 Contributors: johnbillion
 Donate link: http://lud.icro.us/donations/
-Tags: user, users, profiles, switching, wpmu, multisite, buddypress, become, user control, user management, user access
+Tags: user, users, profiles, switching, wpmu, multisite, buddypress, become, user control, user management, user access, developer
 Requires at least: 2.7
 Tested up to: 3.3
 Stable tag: trunk
 
-Instant switching between user accounts in WordPress, WordPress Multisite, BuddyPress and WordPress MU.
+Instant switching between user accounts in WordPress.
 
 == Description ==
 
@@ -14,11 +14,11 @@ This plugin allows you to quickly swap between user accounts in WordPress at the
 
 = Features =
 
- * Instant switching and redirection to the WordPress Dashboard.
- * Instant switching back to the originating account.
+ * Switch users: Instantly switch to any user from the Users screen.
+ * Switch back: Instantly switch back to your originating account.
+ * Switch off: Log out of your account but retain the ability to instantly switch back in again.
  * It's completely secure (see the "Security" section below).
  * Compatible with WordPress, WordPress Multisite, BuddyPress and WordPress MU.
- * Switching off: Log out and log instantly back in again when needed (see the FAQ).
 
 = Security =
 
@@ -26,6 +26,10 @@ This plugin allows you to quickly swap between user accounts in WordPress at the
  * User switching is protected with the WordPress nonce security system, meaning only those who are allowed to switch users can switch.
  * Full support for administration over SSL (if applicable).
  * Passwords are not (and cannot be) revealed.
+
+*Translations Included:*
+
+ * Chinese Simplified by Tunghsiao Liu (Sparanoid)
 
 == Installation ==
 
@@ -39,13 +43,15 @@ If you're installing this as a mu-plugin then see the FAQ for slightly different
 
 = What does "Switch off" mean? =
 
-Switching off logs you out retains your current user ID in a cookie so you can switch straight back (ie. log straight back in) without having to log back in with your username and password. It's akin to switching to no user, and being able to switch back.
+Switching off logs you out of your account but retains your current user ID in a cookie so you can switch straight back (ie. log straight back in) without having to log in with your username and password. It's akin to switching to no user, and being able to switch back.
 
-While you're logged in and you have the 'edit_users' capability, you'll see a 'Switch Off' link in your profile menu in the admin bar. Once you've switched off you'll see a 'Switch back to {user}' link in the footer of your site.
+While you're logged in and you have the 'edit_users' capability, you'll see a 'Switch Off' link in your profile menu in the toolbar.
+
+Once you've switched off you'll see a 'Switch back to {user}' link in the footer of your site.
 
 = Does this plugin work with WordPress Multisite? =
 
-Yes, and you'll also be able to switch users from the Users menu within Network Admin.
+Yes, and you'll also be able to switch users from the Users menu in Network Admin.
 
 = Does this plugin work with BuddyPress? =
 
@@ -53,11 +59,11 @@ Yes, and you'll also be able to switch users from the Members screens.
 
 = Does this plugin work with WordPress MU? =
 
-Yes.
+Yes, but you should really update to Multisite.
 
 = Does this work as a mu-plugin? =
 
-Yes, except you'll need to install 'user-switching.php' into the root of your mu-plugins directory, not in the 'user-switching' subdirectory. This is a restriction of WordPress, not this plugin.
+Yes, but you'll need to install 'user-switching.php' into the root of your mu-plugins directory, not in the 'user-switching' subdirectory. This is a restriction of WordPress.
 
 == Screenshots ==
 
@@ -65,6 +71,12 @@ Yes, except you'll need to install 'user-switching.php' into the root of your mu
 2. The 'Switch To' link on a user's profile
 
 == Changelog ==
+
+= 0.5.1.1 =
+* Chinese Simplified translation by Sparanoid.
+
+= 0.5.1 =
+* Toolbar tweaks for WordPress 3.3.
 
 = 0.5 =
 * New "Switch off" function: Log out and log instantly back in again when needed (see the FAQ).
@@ -102,6 +114,12 @@ Yes, except you'll need to install 'user-switching.php' into the root of your mu
 * Initial release.
 
 == Upgrade Notice ==
+
+= 0.5.1.1 =
+* Chinese Simplified translation by Sparanoid.
+
+= 0.5.1 =
+* Toolbar tweaks for WordPress 3.3.
 
 = 0.5 =
 * Introduces the "Switch off" function: Log out and log instantly back in again when needed (see the FAQ).
