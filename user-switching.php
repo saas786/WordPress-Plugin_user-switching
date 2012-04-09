@@ -7,6 +7,7 @@ Plugin URI:   http://lud.icro.us/wordpress-plugin-user-switching/
 Author:       John Blackbourn
 Author URI:   http://johnblackbourn.com/
 Text Domain:  user_switching
+Domain Path:  /languages/
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -71,7 +72,7 @@ class user_switching {
 			return;
 		?>
 		<tr>
-			<th scope="row"><?php _e( 'User Switching', 'user_switching' ); ?></th>
+			<th scope="row"><?php _ex( 'User Switching', 'User Switching title on user profile screen', 'user_switching' ); ?></th>
 			<td><a href="<?php echo $this->switch_to_url( $user->ID ); ?>"><?php _e( 'Switch&nbsp;To', 'user_switching' ); ?></a></td>
 		</tr>
 		<?php
